@@ -10,58 +10,50 @@
    <title>Facebook - Login in or sign Up</title>
   </head>
   <body>
-
-    <div id="container"\>
-      <div id="recent-logins">
-        <img id="facebook" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="facebook-logo">
-        <div id="title">recent-logins</div>
-          <div id="subtitle">click your picture or add an account</div>
-          <div id="cards">
-            <div id="card-1">
-              <div id="cancel">x</div>
-              <img id="card-1-img" src="images/profile.jpg" alt="profile picture">
-              <div class="username">VARDHAN REDDY</div>
-            </div>
-            <div id="card-2">
-              <img id="card-2-img" src="images/add.webp" alt="add account">
-              <div id="add-account" class="username">Add Account</div>
-            </div>
-          </div>
-      </div>
-      <div id="login">
-        <input type="email" placeholder="Email or Phone Number">
-        <input type="password" placeholder="Password">
-        <input type="button" value="Log In" id="login-button">
-        <a href="#">Forgor Password?</a>
-        <hr style="width:95%;">
-        <input type="button" value="Create New Account" id="Create-new-account">
-        <p><strong>Create a Page</strong>Create a Page for a celebrity,brand or business.</p>
-       </div>
+    <div id="header_wrapper">
+        <div id="header">
+            <form action="post">
+                <li>Email or Phone<br><input type="text" name="email"></li>
+                <li>Password<br><input type="password" name="password"><br><a href="">Forgotten account?</a></li>
+                <li><input type="submit" name="login" value="Log In"></li>
+            </form>
+        </div>
     </div>
-   <footer>
-    <div>
-      English (UK)
-      मराठी
-      हिन्दी  
-      اردو 
-     ગુજરાતી
-     ಕನ್ನಡ
-     ਪੰਜਾਬੀ
-     தமிழ்
-     বাংলা
-     తెలుగు
-     മലയാളം
-     <hr style="width:100;">
-     Sign UpLog InMessengerFacebook LiteWatchPlacesGamesMarketplaceFacebook PayOculusPortal
-     InstagramBulletinLocal
-    <br>
-    FundraisersServicesVoting Information CentreGroupsAboutCreate adCreate PageDevelopersCareers
-    PrivacyCookiesAdChoicesTermsHelpContact uploading and non-usersSettingsActivity log
-    <br><br>
-     Meta © 2022
+    <div id="wrapper">
+        <div id="div1">
+        </div>
+        <div id="div2">
+            <h1>Create an account</h1>
+            <p>It's free and always will be.</p>
+            <li><input type="text" placeholder="First Name" id="Firstname"><input type="text" placeholder="Surname" id="surname"></li>
+            <li><input type="text" placeholder="Mobile number or email"></li>
+            <li><input type="password" placeholder="New password"></li>
+            <p>Birthday</p>
+            <li>
+                <select><option>Day</option></select>
+                <select><option>Month</option></select>
+                <select><option>Year</option></select>
+                <a href="">Why do I need to provide my date of birth?</a>
+            </li>
+            <li><input type="radio">Female <input type="radio">Male</li>
+            <li id="terms">By clicking Create an account, you agree to our <a href="">Terms</a> and that <br>you have read our <a href="">Data Policy</a>, including our <a href="">Cookie Use</a>.</li>
+            <li><input type="submit" value="Create an account"></li>
+            <li id="create_page"><a href="">Create a Page</a> for a celebrity, band or business.</li>
+        </div>
     </div>
-   </footer>
-  </body>
+    <div id="footer_wrapper">
+        <div id="footer1">
+            English (UK) <a href="">हिन्दी</a><a href="">ਪੰਜਾਬੀ</a><a href=""> اردو</a><a href="">தமிழ்</a><a href="">বাংলা</a><a href="">मराठी</a><a href="">తెలుగు</a><a href="">ગુજરાતી</a><a href="">ಕನ್ನಡ</a><a href="">മലയാളം</a>
+        </div>
+        <div id="footer2">
+            <a href="#">Sign Up</a><a href="#">Log In</a><a href="#">Messenger</a><a href="#">DotNetTec</a><a href="#">Mobile</a><a href="#">Find Friends</a>
+            <a href="#">Badges</a><a href="#">People</a><a href="#">Pages</a><a href="#">Places</a><a href="#">Games</a><a href="#">Locations</a>
+            <a href="">Celebrities</a><a href="">Groups</a><a href="">Moments</a><a href="">About</a>
+            <a href="">Create Advert</a><a href="">Create Page</a><a href="">Developers</a>
+            <a href="">Careers</a><a href="">Privacy</a><a href="">Cookies</a><a href="">Ads</a><a href="">Terms</a><a href="">Help</a>
+        </div>
+    </div>
+</body>
 </html>
 CSS Code:)
 body {
@@ -85,41 +77,40 @@ body {
     padding: 0px;
     height: 85px;
 }
-
-    #header li {
+ #header li {
         list-style-type: none;
         float: left;
         text-align: left;
         color: white;
     }
-
-    #header #sitename {
+#header #sitename {
         margin-top: 25px;
     }
 
-        #header #sitename a {
+   #header #sitename a {
             color: white;
             text-decoration: none;
             font-size: 30px;
             font-weight: 900;
         }
 
-    #header form {
+    
+   #header form {
         margin-top: 15px;
         float: right;
     }
 
-        #header form li {
+   #header form li {
             font-size: 13px;
             margin-left: 15px;
         }
 
-            #header form li a {
+   #header form li a {
                 color: #A9BCF5;
                 text-decoration: none;
             }
 
-        #header form input[type="text"] {
+  #header form input[type="text"] {
             margin-top: 3px;
             margin-bottom: 3px;
             width: 150px;
@@ -128,7 +119,7 @@ body {
             padding-left: 3px;
         }
 
-        #header form input[type="password"] {
+   #header form input[type="password"] {
             margin-top: 3px;
             margin-bottom: 3px;
             width: 150px;
@@ -137,7 +128,7 @@ body {
             padding-left: 3px;
         }
 
-        #header form input[type="submit"] {
+   #header form input[type="submit"] {
             height: 25px;
             margin-top: 20px;
             background-color: #084B8A;
@@ -151,58 +142,60 @@ body {
     text-align: center;
     width: 980px;
 }
-
-    #wrapper div {
+  #wrapper div {
         float: left;
         font-family: helvetica, arial, sans-serif;
     }
 
-    #wrapper #div1 {
+ #wrapper #div1 {
         margin-top: 30px;
         width: 590px;
         text-align: left;
     }
-
-        #wrapper #div1 p {
+   #wrapper #div1 p {
             font-size: 20px;
             font-family: arial;
             font-weight: bold;
             margin: 0px;
             color: #0e385f;
         }
-
-    #wrapper #div2 {
+  #wrapper #div2 {
         margin-top: 10px;
         width: 390px;
         text-align: left;
     }
 
-        #wrapper #div2 h1 {
+   #wrapper #div2 h1 {
             margin: 0px;
             font-size: 37px;
             color: #2E2E2E;
         }
 
-        #wrapper #div2 p {
+   #wrapper #div2 p {
             font-size: 18px;
             color: #2E2E2E;
         }
-
-        #wrapper #div2 li {
+   #wrapper #div2 li {
             list-style-type: none;
             margin-top: 10px;
         }
 
-            #wrapper #div2 li #firstname {
+   #wrapper #div2 li #firstname {
                 width: 49%;
             }
 
-            #wrapper #div2 li #surname {
+   #wrapper #div2 li #surname {
                 margin-left: 2%;
                 width: 49%;
+            }   #wrapper #div2 li input[type="text"] {
+                width: 100%;
+                height: 40px;
+                border-radius: 5px;
+                padding-left: 10px;
+                font-size: 18px;
+                border: 1px solid #BDBDBD;
             }
-
-            #wrapper #div2 li input[type="text"] {
+   #wrapper #div2 li input[type="password"] {
                 width: 100%;
                 height: 40px;
                 border-radius: 5px;
@@ -211,21 +204,12 @@ body {
                 border: 1px solid #BDBDBD;
             }
 
-            #wrapper #div2 li input[type="password"] {
-                width: 100%;
-                height: 40px;
-                border-radius: 5px;
-                padding-left: 10px;
-                font-size: 18px;
-                border: 1px solid #BDBDBD;
-            }
-
-            #wrapper #div2 li select {
+   #wrapper #div2 li select {
                 padding: 4px;
                 float: left;
             }
 
-            #wrapper #div2 li a {
+   #wrapper #div2 li a {
                 margin-left: 10px;
                 width: 150px;
                 color: #045FB4;
@@ -236,26 +220,26 @@ body {
                 line-height: 15px;
             }
 
-                #wrapper #div2 li a:hover {
+#wrapper #div2 li a:hover {
                     text-decoration: underline;
                 }
 
-        #wrapper #div2 li {
+  #wrapper #div2 li {
             color: #2E2E2E;
             font-size: 18px;
         }
 
-        #wrapper #div2 #terms {
+  #wrapper #div2 #terms {
             color: #424242;
             font-size: 11px;
         }
 
-            #wrapper #div2 #terms a {
+   #wrapper #div2 #terms a {
                 display: inline;
                 margin: 0px;
             }
 
-        #wrapper #div2 li input[type="submit"] {
+  #wrapper #div2 li input[type="submit"] {
             width: 205px;
             height: 45px;
             text-align: center;
@@ -277,13 +261,13 @@ body {
             text-shadow: 0 1px 2px rgba(0,0,0,.5);
         }
 
-        #wrapper #div2 #create_page {
+   #wrapper #div2 #create_page {
             color: #424242;
             font-size: 13px;
             font-weight: bold;
         }
 
-            #wrapper #div2 #create_page a {
+   #wrapper #div2 #create_page a {
                 display: inline;
                 margin: 0px;
                 font-size: 13px;
@@ -310,14 +294,14 @@ body {
     color: #848484;
 }
 
-    #footer1 a {
+  #footer1 a {
         color: #365899;
         display: inline;
         margin-left: 10px;
         text-decoration: none;
     }
 
-        #footer1 a:hover {
+   #footer1 a:hover {
             text-decoration: underline;
         }
 
@@ -329,7 +313,7 @@ body {
     color: #848484;
 }
 
-    #footer2 a {
+  #footer2 a {
         color: #365899;
         display: inline-block;
         margin: 5px;
@@ -338,6 +322,6 @@ body {
         text-decoration: none;
     }
 
-        #footer2 a:hover {
+   #footer2 a:hover {
             text-decoration: underline;
         }
